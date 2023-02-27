@@ -92,23 +92,45 @@ nav a{
 }
 
 nav a:hover{
-	background: rgba(0,0,0,0.5);
 	text-align: justify;
+	border-radius: 5px;
+	background-color: rgba(123,123,123,0.5);
 }
-
+.menuSelect {
+	appearance:none;
+	width: 9px;
+	height: 8px;
+	border: transparent;	
+	background-color: transparent;
+	color: #93c120;
+	content: '';
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid;
+    position: absolute;
+    margin-left: 5px;
+    top: 22px;
+    vertical-align: middle;
+    vertical-align: calc(-50% - 4px );
+} 
 
 /* PRIMER NIVEL*/
 .menu {
 	border-top: 1px solid #FFF;
+	border-radius:10px
 	border-bottom: 1px solid #FFF;
-	background-color: rgba(123,123,123,1);
-	display:inline;
-	width:100%;
-	float:left;
-	padding:0;
+	background-color: rgba(100,100,100,1);
+	display: inline;
+	width: 100%;
+	float: left;
+	padding: 0;
 	margin: 0;
-	text-align:justify;
+	text-align: justify;
 	z-index: 999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 14px;
 }
 .menu > li{
 	float:right;
@@ -118,15 +140,24 @@ nav a:hover{
 /* SEGUNDO NIVEL*/
 
 nav li li{
-	background:#222;
-	width:200px;
-	max-height:0;
-	overflow:hidden;
-	transition:all 0.6s;
+	width: 200px;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.4s;
+	background-color: #383838;
+	
 }
 nav li:hover > ul > li{
 	max-height:500px;
 	overflow:visible;
+	/*border: 1px solid #000;*/
+
+}
+nav li:hover > ul{
+	
+	border: 1px solid #000;
+	border-radius:5px;
+
 }
 .menu > li > ul{
 	top:100%;
