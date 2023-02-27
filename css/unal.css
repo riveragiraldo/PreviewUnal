@@ -445,6 +445,10 @@ main .breadcrumb-class a:hover {
 
 main.detalle {
 	margin: 0 10% 50px 10%;
+	background-image: url(http://www.manizales.unal.edu.co/fileadmin/background/fondo.jpg);
+background-size: cover;
+margin: 0 0 0 0;
+z-index:2; 
 }
 
 footer {
