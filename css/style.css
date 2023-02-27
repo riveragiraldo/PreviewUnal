@@ -20,6 +20,9 @@ header {
 	top: 0;
 	background-color: #666;
 }
+.site-url{
+	text-decoration:none;
+	}
 .contenedor {
 	position: relative;
 	display: inline-block;
@@ -86,8 +89,7 @@ nav a{
 	display:block;
 	padding:0 2.5em;
 	text-decoration:none;
-	transition:0.4s;	
-
+	transition:0.4s;
 	
 }
 
