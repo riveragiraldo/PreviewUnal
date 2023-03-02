@@ -71,7 +71,8 @@ a {
 }
 a:hover {
 	text-decoration: underline;
-	color: #333333;
+	color: #0000FF;
+/*	font-style: italic;*/
 }
 main {
 	-webkit-box-flex: 1;
@@ -206,6 +207,20 @@ ul.dropdown-menu a:hover, ul.dropdown-menu a:active, ul.dropdown-menu a:focus {
 	background: #4b4b4b;
 	color: white;
 }
+ul.dropdownhor-menu {
+	min-width: 54px;
+	background: #333;
+	border-color: #222;
+	padding: 0;
+}
+ul.dropdownhor-menu a {
+	color: white;
+	padding: 3px 10px;
+}
+ul.dropdownhor-menu a:hover, ul.dropdownhor-menu a:active, ul.dropdownhor-menu a:focus {
+	background: #4b4b4b;
+	color: white;
+}
 #unalTop {
 	position: relative;
 	z-index: 3;
@@ -281,6 +296,10 @@ ul.dropdown-menu a:hover, ul.dropdown-menu a:active, ul.dropdown-menu a:focus {
 	right: 0;
 	left: unset;
 }
+#unalTop .firstMenu .languageMenu ul.dropdownhor-menu {
+	right: 0;
+	left: unset;
+}
 #unalTop .firstMenu .languageMenu:hover, #unalTop .firstMenu .languageMenu.open {
 	background-color: transparent;
 	border-color: transparent
@@ -305,6 +324,9 @@ ul.dropdown-menu a:hover, ul.dropdown-menu a:active, ul.dropdown-menu a:focus {
 	transition: background .5s;
 }
 #unalTop .firstMenu .navbar-default nav li .dropdown-menu {
+	width: 14em;
+}
+#unalTop .firstMenu .navbar-default nav li .dropdownhor-menu {
 	width: 14em;
 }
 #unalTop .firstMenu .navbar-default nav li:first-child {
@@ -535,6 +557,9 @@ table.gsc-completion-container {
 #unalTop .navigation .mainMenu .btn-group ul.dropdown-menu {
 	margin-top: -3px;
 }
+#unalTop .navigation .mainMenu .btn-group ul.dropdownhor-menu {
+	margin-top: -3px;
+}
 main .breadcrumb-class {
 	border-bottom: 1px dotted #646464;
 	color: #323232;
@@ -569,7 +594,34 @@ main.detalle {
 	position: relative;
 }
 
+.articleTitle {
+		
+	position: absolute;
+	width: 25%;
+	height: 50px;
+	background-color: rgba(148, 180, 59, 1);
+	top: 300px;
+	left: 70%;
+	z-index: 2;
+	font-family: "Ancizar Sans", "Ancizar Sans Extrablack", "Ancizar Sans Black";	
+	color: #FFF;
+	font-size: 22px;
+}
 
+.article{
+	position: absolute;
+	width: 25%;
+	height: auto;
+	background-color: rgba(213,213,214,0.9);
+	top: 350px;
+	left: 70%;
+	z-index: 2;
+	font-family: "Ancizar Sans", "Ancizar Sans Extrablack", "Ancizar Sans Black";
+	color: #000;
+	font-size: 18px;
+	text-align: justify;
+	
+}
 .somos-unal {
 	position: absolute;
 	width: 235px;
@@ -602,6 +654,8 @@ main.detalle {
 	top: 89px;
 }
 }
+
+
 footer {
 	height: auto;
 	background: #666;
@@ -660,8 +714,14 @@ footer .logos a img {
 .oldie #unalTop .mainMenu .dropdown-menu li a {
 	display: inline;
 }
+.oldie #unalTop .mainMenu .dropdownhor-menu li a {
+	display: inline;
+}
 .oldie #unalTop .mainMenu .dropdown-menu li a:hover {
 	background-color: #4b4b4b;
+}
+.oldie #unalTop .mainMenu .dropdownhor-menu li a {
+	display: inline;
 }
 .oldie #unalTop .firstMenu .navbar-default nav li a {
 	font-size: .9em;
@@ -965,6 +1025,11 @@ body footer .logos {
 	margin-left: 1.2em;
 	width: 90%;
 }
+#unalTop .navigation .mainMenu .btn-group .dropdownhor-menu {
+	clear: both;
+	margin-left: 1.2em;
+	width: 90%;
+}
 #unalTop .navigation .btn-group {
 	width: 100%;
 }
@@ -1018,6 +1083,22 @@ footer .logos {
 	display: none!important;
 }
 #unalTop .firstMenu #profiles ul.dropdown-menu {
+	display: block;
+	border: 0;
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+	-ms-border-radius: none;
+	-o-border-radius: none;
+	border-radius: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	background-color: transparent;
+	padding: 0;
+}
+#unalTop .firstMenu #profiles ul.dropdownhor-menu {
 	display: block;
 	border: 0;
 	-webkit-border-radius: none;
