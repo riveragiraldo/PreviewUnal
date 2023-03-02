@@ -207,20 +207,8 @@ ul.dropdown-menu a:hover, ul.dropdown-menu a:active, ul.dropdown-menu a:focus {
 	background: #4b4b4b;
 	color: white;
 }
-ul.dropdownhor-menu {
-	min-width: 54px;
-	background: #333;
-	border-color: #222;
-	padding: 0;
-}
-ul.dropdownhor-menu a {
-	color: white;
-	padding: 3px 10px;
-}
-ul.dropdownhor-menu a:hover, ul.dropdownhor-menu a:active, ul.dropdownhor-menu a:focus {
-	background: #4b4b4b;
-	color: white;
-}
+
+
 #unalTop {
 	position: relative;
 	z-index: 3;
@@ -296,10 +284,7 @@ ul.dropdownhor-menu a:hover, ul.dropdownhor-menu a:active, ul.dropdownhor-menu a
 	right: 0;
 	left: unset;
 }
-#unalTop .firstMenu .languageMenu ul.dropdownhor-menu {
-	right: 0;
-	left: unset;
-}
+
 #unalTop .firstMenu .languageMenu:hover, #unalTop .firstMenu .languageMenu.open {
 	background-color: transparent;
 	border-color: transparent
@@ -326,9 +311,7 @@ ul.dropdownhor-menu a:hover, ul.dropdownhor-menu a:active, ul.dropdownhor-menu a
 #unalTop .firstMenu .navbar-default nav li .dropdown-menu {
 	width: 14em;
 }
-#unalTop .firstMenu .navbar-default nav li .dropdownhor-menu {
-	width: 14em;
-}
+
 #unalTop .firstMenu .navbar-default nav li:first-child {
 	border-left: 1px solid #333;
 }
@@ -557,9 +540,7 @@ table.gsc-completion-container {
 #unalTop .navigation .mainMenu .btn-group ul.dropdown-menu {
 	margin-top: -3px;
 }
-#unalTop .navigation .mainMenu .btn-group ul.dropdownhor-menu {
-	margin-top: -3px;
-}
+
 main .breadcrumb-class {
 	border-bottom: 1px dotted #646464;
 	color: #323232;
@@ -653,7 +634,19 @@ main.detalle {
 	width: 105px;
 	top: 89px;
 }
+
+
+/*ESTILOS GENERALES*/
+li > ul{
+	display: none;
 }
+/*PRIMER NIVEL*/
+/*SEGUNDO NIVEL*/
+/*TERCER NIVEL*/
+
+
+
+
 
 
 footer {
@@ -714,15 +707,11 @@ footer .logos a img {
 .oldie #unalTop .mainMenu .dropdown-menu li a {
 	display: inline;
 }
-.oldie #unalTop .mainMenu .dropdownhor-menu li a {
-	display: inline;
-}
+
 .oldie #unalTop .mainMenu .dropdown-menu li a:hover {
 	background-color: #4b4b4b;
 }
-.oldie #unalTop .mainMenu .dropdownhor-menu li a {
-	display: inline;
-}
+
 .oldie #unalTop .firstMenu .navbar-default nav li a {
 	font-size: .9em;
 	line-height: 1.1em;
@@ -1025,11 +1014,7 @@ body footer .logos {
 	margin-left: 1.2em;
 	width: 90%;
 }
-#unalTop .navigation .mainMenu .btn-group .dropdownhor-menu {
-	clear: both;
-	margin-left: 1.2em;
-	width: 90%;
-}
+
 #unalTop .navigation .btn-group {
 	width: 100%;
 }
@@ -1098,20 +1083,5 @@ footer .logos {
 	background-color: transparent;
 	padding: 0;
 }
-#unalTop .firstMenu #profiles ul.dropdownhor-menu {
-	display: block;
-	border: 0;
-	-webkit-border-radius: none;
-	-moz-border-radius: none;
-	-ms-border-radius: none;
-	-o-border-radius: none;
-	border-radius: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-	position: relative;
-	background-color: transparent;
-	padding: 0;
-}
+
 }
