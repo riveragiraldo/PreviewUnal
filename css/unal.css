@@ -634,19 +634,63 @@ main.detalle {
 	width: 105px;
 	top: 89px;
 }
-
+}
 
 /*ESTILOS GENERALES*/
-li > ul{
-	display: none;
+
+nav ul{
+	list-style: none;
+	position: absolute;
+	
+	
+	border-radius: 3px;
+	left: 92.5%;
+	width: 100%;
+
+}
+
+
+
+nav li{position: relative;
+
+
+}
+
+nav a{
+	display: block;
+	padding: 0 2.5em;
+
+
+}
+
+nav li{line-height: 2rem;
+	
+}
+
+nav ul ul{
+	 display: none;
+
 }
 /*PRIMER NIVEL*/
+.barra>ul>li{
+	background: #333;
+	top: -28px;
+	
+}
+.barra >ul{
+	
+
+}
+nav >ul>li{
+	
+
+	
+}
+
 /*SEGUNDO NIVEL*/
+
+
 /*TERCER NIVEL*/
-
-
-
-
 
 
 footer {
