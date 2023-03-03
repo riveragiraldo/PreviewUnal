@@ -640,55 +640,45 @@ main.detalle {
 
 nav ul{
 	list-style: none;
-	position: absolute;
-	
-	
-	border-radius: 3px;
+	position: relative;
 	left: 92.5%;
 	width: 100%;
-
+	border: 1px solid;
+	border-color: #000;
+	border-radius: 4px;
+	top: -28px;
 }
 
-
-
-nav li{position: relative;
-
-
-}
-
+	
 nav a{
 	display: block;
 	padding: 0 2.5em;
-
-
 }
 
 nav li{line-height: 2rem;
-	
 }
 
-nav ul ul{
-	 display: none;
-
-}
 /*PRIMER NIVEL*/
 .barra>ul>li{
 	background: #333;
-	top: -28px;
-	
-}
-.barra >ul{
-	
+
 
 }
-nav >ul>li{
-	
-
-	
-}
-
+/*.barra >ul{
+	border: solid 1px;	
+	border-color: #000;
+	border-radius: 4px;
+}*/
 /*SEGUNDO NIVEL*/
 
+nav ul{
+	display: none;
+}
+
+.dropdown-menu li:hover ul{
+	display: block;
+	
+}
 
 /*TERCER NIVEL*/
 
