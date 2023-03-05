@@ -531,9 +531,20 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 }
 .leftImage{
 	float:left;
+	padding-right:15px;
+	padding-bottom:15px;
+	transition: transform 0.7s; 
 }
-.leftImage{
+
+.leftImage:hover{
+	transform:scale(3,3);
+	padding-right:0px;
+	padding-bottom:0px;
+	border: solid 1px;
+}
+.topImage{
 	float:top;
+	
 }
 .hiperLeft{
 	font-style: italic;
@@ -577,6 +588,55 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 	top: 89px;
 }
 }
+/*ESTILOS GENERALES*/
+.dropdown-menu li{
+	position: relative;
+}
+.dropdown-menu ul{
+	
+}
+
+.barra ul{
+	list-style: none;
+	position: absolute;
+	left: 92.5%;
+	width: 100%;	
+	top: 0%;
+	height: 100%
+	border: solid 1px;	
+	border-color: #000;
+	border-radius: 4px;
+
+}
+
+	
+.barra a{
+	display: block;
+	padding: 0 2.5em;
+}
+
+nav >li{
+	line-height: 3rem;
+
+}
+
+/*PRIMER NIVEL*/
+.barra>ul>li{
+	background: #333;
+}
+
+/*SEGUNDO NIVEL*/
+
+nav ul{
+	display: none;
+}
+
+.dropdown-menu li:hover ul{
+	display: block;
+	
+}
+
+/*TERCER NIVEL*/
 
 footer {
 	height: auto; background: #666; font-size: .9em; color: #ddd; padding: 15px 0 25px 0;
