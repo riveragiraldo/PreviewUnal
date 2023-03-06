@@ -467,6 +467,125 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 	
 }
 
+.formContacto{
+font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+	padding: 15px;
+	font-size: 18px;
+	background-color: transparent;
+	text-align: justify;
+	margin-top: 1%;
+	margin-right: 40%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	line-height:20px;
+	
+}
+
+.contact_form{  
+  font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+  font-size: 18px;
+  width: 500px; 
+  height: auto;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: solid 1px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: transparent; 
+  padding-left: 15px; 
+  padding-right: 15px;
+  line-height: 20px; 
+}
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #000; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+.check{
+  background-color: #fbfbfb; 
+  width: 18px; 
+  height: 18px;
+  float: left;
+  scroll-padding-left: 50px;
+ /* border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #000; 
+ margin-top: 0px;  
+  padding-left: 1px;
+  margin-bottom: 2px; 
+  margin-right: 50px;*/
+}
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px;
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #000;
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+label{
+  display: block; 
+  float: center;  
+}
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #94b43b; 
+  border-color: transparent; 
+  border-style: solid 1px; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+  color:#FFF;
+}
+
+button p{
+  color: #fff; 
+}
+
+span{
+  color: #94b43b; 
+}
+
+.politica{
+  font-size: 13px;  
+  color: #0e0e0e; 
+  margin-left: 25px;
+  text-align: justify;
+
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e; 
+  float: right; 
+}
+
+
 .fichaR{
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 	padding: 15px;
