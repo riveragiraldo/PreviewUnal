@@ -33,9 +33,8 @@
 <link rel="stylesheet" type="text/css" href="css/phone.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/small.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/printer.css" media="print">
-<style type="text/css">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_6Lf1U9skAAAAAJBOgFgrBosl1WHPNvgq2o-TzpJF"></script>
+<style type="text/css"></style>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -334,6 +333,8 @@ body {
                                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                                 </p> 
 
+
+
                 <p>
                   <label for="asunto" class="Politica">Política de tratamiento de datos personales
                     <span class="obligatorio">*</span>
@@ -342,21 +343,10 @@ body {
 
                     <p class = "politica">DE ACUERDO CON LA <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=49981" target="_blank"> LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES</a>, HE LEÍDO, ENTENDIDO Y ACEPTO, LOS TÉRMINOS DESCRITOS EN LA POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES.</p>
                 </p>                      
-<!--               <div class="g-recaptcha" data-sitekey="6Lf1U9skAAAAAHm4S6I-0Huqra6kan_JAqjCk9Vh"></div>
-            <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6Lf1U9skAAAAAHm4S6I-0Huqra6kan_JAqjCk9Vh', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-          });
-        });
-      }
-  </script> -->
+                
+<div class="g-recaptcha" data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93" data-callback="correctCaptcha"></div>
 
-
-
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Envíe sus comentarios</p></button>
+                <button type="submit"Submit name="enviar_formulario" id="enviar"><p>Envíe sus comentarios</p></button>
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>Campos obligatorios.
