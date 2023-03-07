@@ -34,6 +34,8 @@
 <link rel="stylesheet" type="text/css" href="css/small.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/printer.css" media="print">
 <style type="text/css">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_6Lf1U9skAAAAAJBOgFgrBosl1WHPNvgq2o-TzpJF"></script>
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -159,7 +161,6 @@ body {
           <li><a href="#">Ciencias_2</a></li>
         </ul>
       </div>-->
-      
       <div class="btn-group">
         <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">EXPERIENCIAS<span class="caret"></span></div>
         <ul class="dropdown-menu">
@@ -281,30 +282,96 @@ body {
   <div id="pestania-accesibilidad" class="">Panel de Accesibilidad</div>
 </div>-->
 <main class="detalle"> 
-<div class="breadcrumb-class">Está en:<a href="index.html" target="_self" title="Inicio">Inicio</a>/<span>Acerca de nosotros  </span>
+<div class="breadcrumb-class">Está en:<a href="index.html" target="_self" title="inicio">Inicio</a>/<span>Contáctenos</span>
   </div>
-<h1 class="titleFicha">LABORATORIOS REMOTOS UNAL<br></h1>
-<div class="Ficha">
-<img class="leftImage" src="images/fondo.jpg" alt="" width="196" height="136" align="baseline"><p align="justify">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum quam facilisis, mollis ligula id, pharetra diam. Mauris at luctus lorem, eget imperdiet neque. Nam cursus pretium metus, eget aliquet augue sollicitudin bibendum. Vestibulum tellus dolor, pretium id euismod in, pellentesque vel est. Nam tristique libero a enim pulvinar bibendum. Vivamus eu dolor congue, elementum ligula quis, dictum lectus. Sed quis rhoncus lorem. Praesent ullamcorper quam eget orci finibus pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sem metus, consequat nec velit sed, imperdiet posuere purus."</p>
-<br>
-          <br>
-          <p>"Nullam massa nibh, porttitor eget semper sit amet, ullamcorper eu diam. In augue orci, rhoncus et erat at, finibus dictum sem. Vivamus sodales arcu eu lacus cursus venenatis. Sed in mauris sit amet metus sollicitudin suscipit quis fringilla eros. In urna sapien, ultrices id luctus in, tristique sit amet ante. Quisque ut elementum neque. Sed et venenatis diam. Donec facilisis ultricies cursus. Curabitur eu vestibulum est, et interdum metus. Fusce aliquam nulla eget tellus porttitor facilisis. Nullam bibendum erat tempus consequat tristique. Aliquam viverra gravida lacus, a volutpat tortor posuere malesuada. Donec odio dolor, blandit blandit ligula sed, luctus rhoncus dolor. Praesent neque mauris, placerat sed leo vel, dapibus tincidunt velit. Donec euismod malesuada sem, quis pretium sem condimentum non."</p>
-          <br>
-          <br>
-          <p>"Pellentesque ac volutpat mi, et pellentesque tellus. Ut a venenatis leo. Nullam tempus quam ac tincidunt tempus. Phasellus tincidunt consectetur ex vitae ornare. Sed neque dui, lacinia eu quam dictum, ultrices sollicitudin nisl. Sed eu semper metus, elementum congue velit. Mauris feugiat ac mauris et cursus. Etiam vel nisl ac purus volutpat commodo. Praesent ipsum mauris, pharetra vitae tortor eu, venenatis mattis ex. Maecenas consequat rutrum dolor eu cursus."</p>
-          <br>
-          <br>
-          <p>Etiam venenatis vulputate urna non fringilla. Fusce pretium facilisis arcu, vel tincidunt ipsum. Fusce gravida at mauris eu tempor. Fusce in libero accumsan urna suscipit scelerisque eu vitae arcu. Quisque purus sapien, blandit vel magna quis, bibendum malesuada ipsum. In vitae finibus neque, nec dapibus turpis. Sed in accumsan ligula. Fusce eget nunc nibh. Ut rutrum, augue at sagittis tempor, lectus nisl sagittis tortor, eu volutpat mi nulla at massa. Donec augue erat, tincidunt eget turpis sit amet, ultricies porttitor magna. Mauris velit dolor, efficitur ut nulla in, condimentum interdum nisi. Nunc tempor magna quam, eu elementum ligula cursus ut. Integer placerat est non metus consequat, sit amet rutrum urna euismod. Donec ut nunc nunc. Cras commodo tortor sodales orci maximus tristique."</p>
-          <br></div>
+<div class="contact_form">
+
+    <div class="formulario">      
+      <h2 class="titleFicha" ">Información de contacto</h2><br>
+        <p align="left">Por favor diligencie los datos a continuación y nos comunicaremos con usted.</p><br>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <!--<p>
+                   <label for="website" class="colocar_website">Sitio web
+                  </label> 
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>  -->  
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p> 
+
+                <p>
+                  <label for="asunto" class="Politica">Política de tratamiento de datos personales
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input class="check" type="checkbox" name="acepta_tratamiento" id="tratamiento" required="obligatorio" placeholder="Acepta Tratamiento de datos">
+
+                    <p class = "politica">DE ACUERDO CON LA <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=49981" target="_blank"> LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES</a>, HE LEÍDO, ENTENDIDO Y ACEPTO, LOS TÉRMINOS DESCRITOS EN LA POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES.</p>
+                </p>                      
+<!--               <div class="g-recaptcha" data-sitekey="6Lf1U9skAAAAAHm4S6I-0Huqra6kan_JAqjCk9Vh"></div>
+            <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lf1U9skAAAAAHm4S6I-0Huqra6kan_JAqjCk9Vh', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script> -->
+
+
+
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Envíe sus comentarios</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>Campos obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
           
           <div class="fichaR"> <a href="https://d1xb30i372mnxf.cloudfront.net/" target="_blank" ><img class="topImage" src="images/QR/larun.png" alt="" width="200" height="200" align="baseline"></a> 
             <p align="justify">Ingrese a plataforma de laboratorios remotos <a href="https://d1xb30i372mnxf.cloudfront.net/" target="_blank">Aquí</a></p></div>
             
             <div class="fichaB">  
-            <p align="left">
-            Más información:<br><a href="contactenos.html">Contáctenos<br><br></a>
-            <a href="Index.html">Volver al inicio<br></a>
-            </p></div>	
+            <p align="left"><a href="Index.html">Volver al inicio<br></a>
+            Más información:<br><a href="contactenos.html">Contáctenos<br></a></p></div>	
 </main>
 <footer class="clear">
   <nav class="col-md-3 col-lg-3 col-sm-3 col-xs-4 col-xxs-6 gobiernoLinea"> <a href="http://www.legal.unal.edu.co" target="_top">Régimen Legal</a> <a href="http://personal.unal.edu.co" target="_top">Talento humano</a> <a href="http://contratacion.unal.edu.co" target="_top">Contratación</a> <a href="http://personal.unal.edu.co" target="_top">Ofertas de empleo</a> <a href="http://rendiciondecuentas.unal.edu.co/" target="_top">Rendición de cuentas</a> <a href="http://docentes.unal.edu.co/concurso-profesoral/" target="_top">Concurso docente</a> <a href="http://www.pagovirtual.unal.edu.co/" target="_top">Pago Virtual</a> <a href="http://controlinterno.unal.edu.co/" target="_top">Control interno</a> <a href="http://siga.unal.edu.co" target="_top">Calidad</a> <a href="http://unal.edu.co/buzon-de-notificaciones/" target="_self">Buzón de notificaciones</a> </nav>
@@ -317,9 +384,7 @@ body {
       (+57) 606 8879300</p>
     <p class="col-sm-12 col-md-6 derechos"> &copy; Copyright 2014<br/>
       Algunos derechos reservados.<br/>
-      <a title="Dirección de Laboratorios Remotos, sede Manizales" href="mailto:dirlabor_man@unal.edu.co">dirlabor_man@unal.edu.co</a><br/>
-      <a href="#" target="_blank">Acerca de este sitio web</a><br/>
-      Actualización: <!-- #BeginDate format:Am3 -->03/05/2023<!-- #EndDate --> 
+      <a title="Dirección de Laboratorios Remotos, sede Manizales" href="mailto:dirlabor_man@unal.edu.co">dirlabor_man@unal.edu.co</a><<!-- #BeginDate format:Am3 -->03/06/2023<!-- #EndDate -->inDate format:Am3 -->03/06/2023<!-- #EndDate -->inDate format:Am3 -->03/06/2023<!-- #EndDate --> 
     </p>
   </div>
   <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 logos">
