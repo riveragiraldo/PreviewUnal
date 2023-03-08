@@ -3,9 +3,13 @@
 const contactForm = document.getElementById('contactForm');
 const registro = document.getElementById('registro');
 const exito = document.getElementById('exito');
+
+
+
 contactForm.addEventListener('submit', async(e)=>{
 
     e.preventDefault();
+    
 
     //Escribir filas
 
@@ -17,6 +21,7 @@ const respuesta = await fetch('https://sheet.best/api/sheets/4b0e3de5-b959-4292-
             'Content-Type': 'application/json'
         },
         body:JSON.stringify({
+            "Fecha": contactForm.fecha.value,
             "Nombre": contactForm.nombre.value,
             "Email": contactForm.email.value,
             "Telefono": contactForm.telefono.value,
@@ -28,9 +33,11 @@ const respuesta = await fetch('https://sheet.best/api/sheets/4b0e3de5-b959-4292-
     const contenido = await respuesta.json();
     console.log(contenido);
 
-    } catch(error){
+    } 
+    catch(error){
 console.log(error);
     }
+    
 
 //Leer filas
 

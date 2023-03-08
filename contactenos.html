@@ -273,7 +273,7 @@
       <br>
       <p align="left">Por favor diligencie los datos a continuación y nos comunicaremos con usted.</p>
       <br>
-      <form class="contactForm" id="contactForm" action="subForm.php" method="post">
+      <form class="contactForm" id="contactForm">
         <p>
                   <label for="nombre" class="colocar_nombre">Nombre
                     <span class="obligatorio">*</span>
@@ -313,8 +313,18 @@
                   </label>                     
                                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..." required="obligatorio"></textarea> 
                                 </p> 
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+<script>
+$( document ).ready(function() {
 
+    var now = new Date();
+    var today = now.toLocaleString();
+    $("#fecha").val(today);
+});
+</script>
+
+                  <input type="hidden"  name="fecha" id="fecha" value="<script>#fecha</script>">
 
                 <p>
                   <label for="asunto" class="Politica">Política de tratamiento de datos personales
@@ -341,6 +351,8 @@
         </svg>
         <h1>¡Registro exitoso!</h1>
         <p>Pronto nos comunicaremos con usted.<br><br><br><br></p>
+       
+        <button  onclick="history.go(0)" type="button"><p>Volver</p></button>
       </div>
   </div>
   <div class="fichaR"> <a href="https://d1xb30i372mnxf.cloudfront.net/" target="_blank" ><img class="topImage" src="images/QR/larun.png" alt="" width="200" height="200" align="baseline"></a>
