@@ -546,7 +546,7 @@ label{
   float: center;  
 }
 
-button{
+.button{
   height: 45px; 
   padding-left: 5px;
   padding-right: 5px;   
@@ -560,9 +560,10 @@ button{
   width: 420px;   
   cursor: pointer;
   color:#FFF;
+  text-align: center;
 }
 
-button p{
+.button p{
   color: #fff; 
 }
 
@@ -570,7 +571,7 @@ span{
   color: #94b43b; 
 }
 
-button:hover {
+.button:hover {
 
 transition: 0.5s;
 background-color: rgba(72, 0, 157, 0.6);

@@ -278,20 +278,20 @@
                   <label for="nombre" class="colocar_nombre">Nombre
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="text" name="introducir_nombre" id="nombre"  placeholder="Escribe tu nombre" required="obligatorio">
+                    <input type="text"  id="nombre" name="nombre" placeholder="Escribe tu nombre" required="obligatorio">
                 </p>
               
                 <p>
                   <label for="email" class="colocar_email">Email
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="email" name="introducir_email" id="email"  placeholder="Escribe tu Email" required="obligatorio">
+                    <input type="email"  id="email" name="correo" placeholder="Escribe tu Email" required="obligatorio">
                 </p>
             
                 <p>
                   <label for="telefone" class="colocar_telefono">Teléfono
                   </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
                 </p>    
               
                 <!--<p>
@@ -304,14 +304,14 @@
                   <label for="asunto" class="colocar_asunto">Asunto
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="text" name="introducir_asunto" id="asunto"  placeholder="Escribe un asunto" required="obligatorio">
+                    <input type="text"  id="asunto" name="asunto" placeholder="Escribe un asunto" required="obligatorio">
                 </p>    
               
                 <p>
                   <label for="mensaje" class="colocar_mensaje">Mensaje
                     <span class="obligatorio">*</span>
                   </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..." required="obligatorio"></textarea> 
+                                    <textarea  class="texto_mensaje" name="mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..." required="obligatorio"></textarea> 
                                 </p> 
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -336,12 +336,18 @@ $( document ).ready(function() {
                 </p>
                 <div class="g-recaptcha" data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93" data-callback="correctCaptcha" required="obligatorio"></div>
 
-                <button type="submit" Submit name="enviar_formulario" id="enviar"><p>Envíe sus comentarios</p></button>
-
+                <input class="button" type="submit" id="button" value="Envíe sus comentarios" >
+                
                 <p class="aviso">
                   <span class="obligatorio"> * </span>Campos obligatorios.
                 </p> 
       </form>
+     <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('QA7ng39w-z3lITzit')
+</script>
       
     </div>
 <div class="header exito" id="exito">
@@ -352,7 +358,8 @@ $( document ).ready(function() {
         <h1>¡Registro exitoso!</h1>
         <p>Pronto nos comunicaremos con usted.<br><br><br><br></p>
        
-        <button  onclick="history.go(0)" type="button"><p>Volver</p></button>
+        
+        <input class="button" onclick="history.go(0)" id="refresh" value="Volver" >
       </div>
   </div>
   <div class="fichaR"> <a href="https://d1xb30i372mnxf.cloudfront.net/" target="_blank" ><img class="topImage" src="images/QR/larun.png" alt="" width="200" height="200" align="baseline"></a>
@@ -384,5 +391,24 @@ $( document ).ready(function() {
   <div class="col-xs-6 col-sm-12 col-md-6 no-padding"> <a class="col-xs-6 col-sm-12" href="https://www.sivirtual.gov.co/memoficha-entidad/-/entidad/T0356"> <img alt="Trámites en línea" src="images/log_gobiern.png" width="67" height="51" /> </a> <a class="col-xs-6 col-sm-12" href="http://www.contaduria.gov.co/"> <img alt="Contaduría general de la republica" src="images/log_contra.png" width="67" height="51" /> </a> </div>
 </footer>
 <script src="js/app.js"></script>
+<script>const btn = document.getElementById('button');
+
+document.getElementById('contactForm')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   //btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_f5wd67g';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      //btn.value = 'Envíe sus comentarios';
+    }, (err) => {
+      //btn.value = 'Envíe sus comentarios';
+      alert(JSON.stringify(err));
+    });
+});</script>
 </body>
 </html>

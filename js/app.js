@@ -6,15 +6,17 @@ const exito = document.getElementById('exito');
 
 
 
+
+
+
 contactForm.addEventListener('submit', async(e)=>{
 
     e.preventDefault();
-    
 
     //Escribir filas
 
     try{
-const respuesta = await fetch('https://sheet.best/api/sheets/4b0e3de5-b959-4292-9f99-962537bd36cf',{
+        const respuesta = await fetch('https://sheet.best/api/sheets/4b0e3de5-b959-4292-9f99-962537bd36cf',{
         method:'POST',
         mode: 'cors',
         headers: {
@@ -88,6 +90,10 @@ console.log(error);
 
     // Mensaje de Validación
 
-    registro.classList.remove('activo');
+   registro.classList.remove('activo');
     exito.classList.add('activo');
+
+
 });
+
+
