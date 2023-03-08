@@ -563,6 +563,23 @@ label{
   text-align: center;
 }
 
+.button_disable{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, .2); 
+  border-color: transparent; 
+  border-style: solid 1px; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+  color:#FFF;
+  text-align: center;
+}
+
 .button p{
   color: #fff; 
 }
@@ -574,7 +591,7 @@ span{
 .button:hover {
 
 transition: 0.5s;
-background-color: rgba(72, 0, 157, 0.6);
+/*background-color: rgba(72, 0, 157, 0.6);*/
 }
 
 .politica{

@@ -27,7 +27,8 @@
 <link rel="stylesheet" type="text/css" href="css/small.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/printer.css" media="print">
 <style type="text/css"></style>
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+<script src='//www.google.com/recaptcha/api.js' async defer></script>
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/unal.js" type="text/javascript"></script>
 <script src="js/accesibilidad.js" type="text/javascript"></script>
@@ -313,16 +314,18 @@
                   </label>                     
                                     <textarea  class="texto_mensaje" name="mensaje" id="mensaje"  placeholder="Deja aquí tu comentario..." required="obligatorio"></textarea> 
                                 </p> 
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                
+                <!-- Extrae la fecha y hora actual para evitar que el ususario tenga que hacerlo -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-$( document ).ready(function() {
+                <script>
+                $( document ).ready(function() {
 
-    var now = new Date();
-    var today = now.toLocaleString();
-    $("#fecha").val(today);
-});
-</script>
+                    var now = new Date();
+                    var today = now.toLocaleString();
+                    $("#fecha").val(today);
+                });
+                </script>
 
                   <input type="hidden"  name="fecha" id="fecha" value="<script>#fecha</script>">
 
@@ -334,9 +337,16 @@ $( document ).ready(function() {
 
                     <p class = "politica">DE ACUERDO CON LA <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=49981" target="_blank"> LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES</a>, HE LEÍDO, ENTENDIDO Y ACEPTO, LOS TÉRMINOS DESCRITOS EN LA POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES.</p>
                 </p>
-                <div class="g-recaptcha" data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93" data-callback="correctCaptcha" required="obligatorio"></div>
+                <!-- g-recaptcha div -->
+                        <div class="form-group text-center">
+                            <!-- Add the sitekey in data-sitekey attribute here -->
+                            <div class="g-recaptcha" data-theme="light" data-size="normal"
+                                data-callback="captchaVerified" data-expired-callback="captchaExpired"
+                                data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93">
+                            </div>
+                        </div>
 
-                <input class="button" type="submit" id="button" value="Envíe sus comentarios" >
+                <input class="button_disable" type="submit" id="button" disabled title="Debes validar que no eres un robot" value="Envíe sus comentarios" >
                 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>Campos obligatorios.
@@ -390,7 +400,11 @@ $( document ).ready(function() {
   <div class="col-xs-6 col-sm-12 col-md-6 no-padding"> <a class="col-xs-6 col-sm-12" href="http://www.orgulloun.unal.edu.co"> <img class="hidden-print" alt="Orgullo UN" src="images/log_orgullo.png" width="78" height="21" /> <img class="visible-print" alt="Orgullo UN" src="images/log_orgullo_black.png" width="94" height="37" /> </a> <a class="col-xs-6 col-sm-12 imgAgencia" href="http://www.agenciadenoticias.unal.edu.co/inicio.html"> <img class="hidden-print" alt="Agencia de noticias" src="images/log_agenc.png" width="94" height="25" /> <img class="visible-print" alt="Agencia de noticias" src="images/log_agenc_black.png" width="94" height="37" /> </a> </div>
   <div class="col-xs-6 col-sm-12 col-md-6 no-padding"> <a class="col-xs-6 col-sm-12" href="https://www.sivirtual.gov.co/memoficha-entidad/-/entidad/T0356"> <img alt="Trámites en línea" src="images/log_gobiern.png" width="67" height="51" /> </a> <a class="col-xs-6 col-sm-12" href="http://www.contaduria.gov.co/"> <img alt="Contaduría general de la republica" src="images/log_contra.png" width="67" height="51" /> </a> </div>
 </footer>
+
+<!-- Llama función para que se conecte api (sheetbest)que gestiones con base de datos de google docs -->
 <script src="js/app.js"></script>
+
+<!-- Función que conecta con la (api mailjs) para envío de correo -->
 <script>const btn = document.getElementById('button');
 
 document.getElementById('contactForm')
@@ -410,5 +424,22 @@ document.getElementById('contactForm')
       alert(JSON.stringify(err));
     });
 });</script>
+
+ <!-- Validación del recaptcha habilita boton enviar  -->
+ <!-- Front-End Validation Callback Functions -->
+<script>
+            // Verification callback function
+            function captchaVerified() {
+                var submitBtn = document.getElementById('button');
+                submitBtn.removeAttribute('disabled');
+                submitBtn.removeAttribute('title');
+                submitBtn.classList.remove('button_disable', 'disabled');
+                submitBtn.classList.add('button');
+            }
+            // Expiration callback function
+            function captchaExpired() {
+                grecaptcha.reset();
+            }
+        </script>
 </body>
 </html>
