@@ -481,10 +481,20 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 	
 }
 
+.formTitle{
+	font-family: 'Ancizar sans' !important;
+	text-align: center;
+	
+}
+
+.subFormTitle{
+	margin-left: 5%;
+	width: 90%;
+}
 .contact_form{  
   font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
   font-size: 18px;
-  width: 500px; 
+  width: 35%; 
   height: auto;
   margin-left: 10%;
   margin-top: 5%;
@@ -498,9 +508,23 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
   line-height: 20px; 
 }
 
+.select{
+  background-color: #fbfbfb; 
+  width: 90%; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #000; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 5%; 
+}
+
 input{
   background-color: #fbfbfb; 
-  width: 408px; 
+  width: 90%; 
   height: 40px; 
   border-radius: 5px;  
   border-style: solid; 
@@ -509,27 +533,14 @@ input{
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
+  margin-left: 5%; 
 }
 
-.check{
-  background-color: #fbfbfb; 
-  width: 18px; 
-  height: 18px;
-  float: left;
-  scroll-padding-left: 50px;
- /* border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #000; 
- margin-top: 0px;  
-  padding-left: 1px;
-  margin-bottom: 2px; 
-  margin-right: 50px;*/
-}
+
 
 textarea{
   background-color: #fbfbfb; 
-  width: 405px; 
+  width: 90%; 
   height: 150px;
   border-radius: 5px;  
   border-style: solid; 
@@ -539,11 +550,13 @@ textarea{
   padding-left: 10px;
   margin-bottom: 20px; 
   padding-top: 15px; 
+  margin-left: 5%; 
 }
 
 label{
-  display: block; 
-  float: center;  
+	margin-left:5% ;
+  	display: block; 
+  	float: center;  
 }
 
 .button{
@@ -557,7 +570,7 @@ label{
   border-color: transparent; 
   border-style: solid 1px; 
   border-radius: 10px;  
-  width: 420px;   
+  width: 90%;   
   cursor: pointer;
   color:#FFF;
   text-align: center;
@@ -574,7 +587,7 @@ label{
   border-color: transparent; 
   border-style: solid 1px; 
   border-radius: 10px;  
-  width: 420px;   
+  width: 90%;   
   cursor: pointer;
   color:#FFF;
   text-align: center;
@@ -593,20 +606,42 @@ span{
 transition: 0.5s;
 /*background-color: rgba(72, 0, 157, 0.6);*/
 }
-
+ .politicaTramiento{
+ 	margin-left: 5%;
+ 	padding-top: 15px;
+ }
 .politica{
   font-size: 13px;  
   color: #0e0e0e; 
-  margin-left: 25px;
   text-align: justify;
-
+  margin-left: 24px;
+  margin-right: 5%;
+  
 }
+
+.check{
+  background-color: #fbfbfb; 
+  width: 18px; 
+  height: 18px;
+  float: left;
+
+ }
+
+.reCaptcha{
+  margin-left: 5%;
+  width: 90%;
+  background-color: transparent; 
+
+ }
+
 
 
 .aviso{
   font-size: 13px;  
-  color: #0e0e0e; 
-  float: right; 
+  color: #0e0e0e;  
+  margin-right: 5%;
+  float: right;
+  
 }
 
 

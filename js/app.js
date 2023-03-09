@@ -5,10 +5,6 @@ const registro = document.getElementById('registro');
 const exito = document.getElementById('exito');
 
 
-
-
-
-
 contactForm.addEventListener('submit', async(e)=>{
 
     e.preventDefault();
@@ -29,7 +25,8 @@ contactForm.addEventListener('submit', async(e)=>{
             "Telefono": contactForm.telefono.value,
             "Asunto": contactForm.asunto.value,
             "Mensaje": contactForm.mensaje.value,
-            "AceptaPol": contactForm.tratamiento.value
+            "AceptaPol": contactForm.tratamiento.value,
+            //"Poblacion": contactForm.asunto.value
         })
     });
     const contenido = await respuesta.json();
@@ -90,7 +87,7 @@ console.log(error);
 
     // Mensaje de Validación
 
-   registro.classList.remove('activo');
+    registro.classList.remove('activo');
     exito.classList.add('activo');
 
 
