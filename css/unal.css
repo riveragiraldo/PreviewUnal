@@ -448,6 +448,48 @@ main .breadcrumb-class a:hover {
 main.detalle {
 	margin: 0 0 50px 0;
 }
+
+
+.fichaR{
+	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+	padding: 15px;
+	font-size: 18px;
+	background-color: #FFF;
+	text-align: justify;
+	width:286px;
+	margin-top: 1%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+	margin-left: 50%;
+	line-height: 20px;
+	position: absolute;
+	top: 39.6%/*239px*/;
+	border-radius: 10px;	
+}
+
+.fichaB{
+	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+	padding: 15px;
+	font-size: 18px;
+	background-color: #FFF;
+	text-align: justify;
+	width:286px;
+	margin-top: 0%;
+	margin-right: 10%;
+	margin-bottom: 0%;
+	margin-left: 50%;
+	line-height: 20px;
+	position: absolute;
+	top: 105%/*239px*/;
+	border-radius: 10px;	
+}
+
+.contenedorQR{
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
 .titleFicha{
 	font-family: 'Ancizar sans' !important;
 	margin-left:10%;
@@ -673,37 +715,7 @@ transition: 0.5s;
 	color: var(--primario);
 }
 
-.fichaR{
-	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
-	padding: 15px;
-	font-size: 18px;
-	background-color: #FFF;
-	text-align: justify;
-	width:230px;
-	margin-top: 0%;
-	margin-right: 10%;
-	margin-bottom: 5%;
-	margin-left: 63%;
-	line-height: 20px;
-	position: absolute;
-	top: 39.6%/*239px*/;	
-}
 
-.fichaB{
-	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
-	padding: 15px;
-	font-size: 18px;
-	background-color: #FFF;
-	text-align: justify;
-	width:230px;
-	margin-top: 0%;
-	margin-right: 10%;
-	margin-bottom: 5%;
-	margin-left: 63%;
-	line-height: 20px;
-	position: absolute;
-	top: 90%/*239px*/;	
-}
 .articleTitle {
 		
 	position: absolute;
