@@ -497,7 +497,17 @@ document.getElementById('contactForm')
             }
             // Expiration callback function
             function captchaExpired() {
-                grecaptcha.reset();
+                
+
+                var submitBtn = document.getElementById('button');
+                submitBtn.addAttribute('disabled');
+                submitBtn.addAttribute('title','Debes validar que no eres un robot');
+                submitBtn.classList.remove('button');
+                submitBtn.classList.add('button_disable', 'disabled');
+                 
+                grecaptcha.reset(); 
+
+
             }
         </script>
 </body>
