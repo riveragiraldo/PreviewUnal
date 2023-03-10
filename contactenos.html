@@ -501,13 +501,13 @@ document.getElementById('contactForm')
             function captchaExpired() {
                 
 
-                var submitBtn = document.getElementById('button');
+                var submitButton = document.getElementById('button');
                 grecaptcha.reset(); 
 
 
-                submitBtn.addAttribute('disabled');
-                submitBtn.classList.remove('button');
-                submitBtn.classList.add('button_disable', 'disabled');
+                submitButton.addAttribute('disabled');
+                submitButton.classList.remove('button');
+                submitButton.classList.add('button_disable', 'disabled');
                 
                  
                 
