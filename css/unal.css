@@ -51,7 +51,13 @@ a:hover {
 }
 
 main {
-	-webkit-box-flex: 1; -webkit-flex: 1 0 auto; -moz-box-flex: 1; -moz-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; min-height: 30em;
+	-webkit-box-flex: 1; 
+	-webkit-flex: 1 0 auto; 
+	-moz-box-flex: 1; 
+	-moz-flex: 1 0 auto; 
+	-ms-flex: 1 0 auto; 
+	flex: 1 0 auto; 
+	min-height: 800px;
 }
 
 body>footer:before {
@@ -452,42 +458,42 @@ main.detalle {
 
 .fichaR{
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
-	padding: 15px;
 	font-size: 18px;
 	background-color: #FFF;
 	text-align: justify;
 	width:286px;
-	margin-top: 1%;
+	padding: 15px;
+	line-height: 20px;
+	border-radius: 10px;
+	
+	
+	
+	
+	/*position: absolute;
+	margin-left: 50%;
 	margin-right: 10%;
 	margin-bottom: 0%;
-	margin-left: 50%;
-	line-height: 20px;
-	position: absolute;
-	top: 39.6%/*239px*/;
-	border-radius: 10px;	
+	top: 39.6%;
+	margin-top: 1%;*/
+		
 }
 
 .fichaB{
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
-	padding: 15px;
 	font-size: 18px;
 	background-color: #FFF;
 	text-align: justify;
 	width:286px;
-	margin-top: 0%;
-	margin-right: 10%;
-	margin-bottom: 0%;
-	margin-left: 50%;
+	padding: 15px;
 	line-height: 20px;
-	position: absolute;
-	top: 105%/*239px*/;
-	border-radius: 10px;	
+	border-radius: 10px;
+	margin-top: 25px;
 }
 
 .contenedorQR{
 	display: flex;
 	justify-content: center;
-	padding: 15px;
+	padding: 3px;
 }
 
 .titleFicha{
@@ -495,19 +501,27 @@ main.detalle {
 	margin-left:10%;
 	
 }
-.Ficha{
-font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+.cuerpoFicha{
 	padding: 15px;
+	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
+
 	font-size: 18px;
+	line-height:20px;
 	background-color: #FFF;
 	text-align: justify;
-	margin-top: 1%;
-	margin-right: 40%;
+	margin-top: 5%;
 	margin-bottom: 5%;
 	margin-left: 10%;
-	line-height:20px;
-	
+	width: 50%;
+	border-radius: 10px;
+	min-height: 250px;
+
 }
+	
+	
+
+
+
 
 .formContacto{
 font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
@@ -536,7 +550,7 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 .contact_form{  
   font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
   font-size: 18px;
-  width: 35%; 
+  width: 50%; 
   height: auto;
   margin-left: 10%;
   margin-top: 5%;
@@ -600,6 +614,15 @@ label{
   	display: block; 
   	float: center;  
 }
+
+aside {
+	position: absolute;
+	
+	bottom: 10%;
+	right: 10%;
+	top: 42.5%;
+}
+	
 
 .button{
   height: 45px; 
@@ -748,17 +771,38 @@ transition: 0.5s;
 	
 }
 .leftImage{
+	
+	transition: transform 0.9s;
+	border:solid 1px;
+	border-color: transparent; 
+	border-radius: 6px;
+	
+
+
+	
+}
+
+
+.primImage{
+
+	
+	transition: transform 0.9s;
+	border:solid 1px;
+	border-color: transparent; 
+	border-radius: 6px;
+	
+}
+.contenedorImage{
 	float:left;
 	padding-right:15px;
 	padding-bottom:15px;
-	transition: transform 0.7s; 
+	
 }
-
 .leftImage:hover{
-	transform:scale(3,3);
-	padding-right:0px;
-	padding-bottom:0px;
+	transform:scale(3) translate(60px);	
 	border: solid 1px;
+	border-color: transparent;
+	border-radius: 5px;
 }
 .topImage{
 	float:top;
