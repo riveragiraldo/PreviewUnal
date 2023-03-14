@@ -752,9 +752,11 @@ transition: 0.5s;
 	color: #FFF;
 	font-size: 22px;
 	padding: 5px;
+	border-top-right-radius: 15px;
 }
 
 .article{
+	border-bottom-left-radius: 13px;
 	position: absolute;
 	width: 25%;
 	height: auto;
