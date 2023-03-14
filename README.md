@@ -1,2 +1,2 @@
-# Página previa laboratorios remotos
+# Página de laboratorios remotos
 Laboratorios Interfacultades
