@@ -745,7 +745,7 @@ transition: 0.5s;
 	width: 25%;
 	height: 50px;
 	background-color: rgba(148, 180, 59, 1);
-	top: 300px;
+	top: 250px;
 	left: 70%;
 	z-index: 2;
 	font-family: "Ancizar Sans", "Ancizar Sans Extrablack", "Ancizar Sans Black";	
@@ -759,7 +759,7 @@ transition: 0.5s;
 	width: 25%;
 	height: auto;
 	background-color: rgba(213,213,214,0.9);
-	top: 350px;
+	top: 300px;
 	left: 70%;
 	padding: 20px;
 	z-index: 2;
@@ -822,13 +822,14 @@ transition: 0.5s;
 	position: absolute;
 	width: 235px;
 	height: auto;
-	background-color: #48009d;
+	 background-color: #fff;/*#48009d; */
 	border-bottom-right-radius: 20px;
 	top: 100px;
 	left: 0;
 	z-index: 1
 }
 .somos-unal img {
+	margin-top: 15%;
 	width: 100%;
 	height: auto;
 }
