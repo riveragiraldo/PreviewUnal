@@ -792,6 +792,17 @@ transition: 0.5s;
 	border-radius: 6px;
 	
 }
+.fiImage{
+
+	width: 500px;
+	height: 500px;
+	border:solid 1px;
+	border-color: transparent; 
+	border-radius: 6px;
+	
+}
+
+
 .contenedorImage{
 	float:left;
 	padding-right:15px;
