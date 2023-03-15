@@ -835,7 +835,8 @@ transition: 0.5s;
 	position: absolute;
 	width: 235px;
 	height: auto;
-	  background-color: #fff;/* #48009d; */
+	background-color: transparent;
+	margin-left: 30px;
 	border-bottom-right-radius: 20px;
 	top: 100px;
 	left: 0;
