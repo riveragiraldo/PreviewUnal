@@ -693,8 +693,8 @@ transition: 0.5s;
  }
 
 .reCaptcha{
-  margin-left: 5%;
-  width: auto;
+  margin-left: 0%;
+  width: 90%;
   background-color: transparent; 
 
  }
