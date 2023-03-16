@@ -303,57 +303,94 @@
         title="inicio">Inicio</a>/<span>Contáctenos</span> </div>
 
 
-    <div class="contact_form">
-      <div class="registro activo" id="registro">
-        <h2 class="formTitle">INFORMACIÓN DE CONTACTO</h2>
-        <br>
-        <p class="subFormTitle" align="left">Por favor diligencie los datos a continuación y nos comunicaremos con
-          usted.</p>
-        <br>
-        <form class="contactForm" id="contactForm">
-          <p>
-            <label for="nombre" class="colocar_nombre">Nombre
-              <span class="obligatorio">*</span>
-            </label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="obligatorio">
-          </p>
+    
+    
+    
+    
 
-          <p>
-            <label for="email" class="colocar_email">Email
-              <span class="obligatorio">*</span>
-            </label>
-            <input type="email" id="email" name="correo" placeholder="Escribe tu Email" required="obligatorio">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 bg-danger" align="center">
+      <div class="contact_form">
+        <div class="registro activo" id="registro">
+          <h2 class="formTitle">INFORMACIÓN DE CONTACTO</h2>
+          <br />
+          <p class="subFormTitle" align="left">
+            Por favor diligencie los datos a continuación y nos comunicaremos
+            con usted.
           </p>
+          <br />
+          <form class="contactForm" id="contactForm">
+            <p>
+              <label for="nombre" class="colocar_nombre"
+                >Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required="obligatorio"
+              />
+            </p>
 
-          <p>
-            <label for="telefone" class="colocar_telefono">Teléfono
-            </label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
-          </p>
+            <p>
+              <label for="email" class="colocar_email"
+                >Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="correo"
+                placeholder="Escribe tu Email"
+                required="obligatorio"
+              />
+            </p>
 
-          <!--<p>
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono </label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Escribe tu teléfono"
+              />
+            </p>
+
+            <!--<p>
                    <label for="website" class="colocar_website">Sitio web
                   </label> 
                     <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
                 </p>  -->
 
-          <p>
-            <label for="asunto" class="colocar_asunto">Asunto
-              <span class="obligatorio">*</span>
-            </label>
-            <select class="select" id="asunto" name="asunto" placeholder="asunto" required="obligatorio">
-              <option value="">--Seleccione una opción--</option>
-              <option value="Pregunta">Pregunta</option>
-              <option value="Cotizacion">Cotización</option>
-              <option value="AgendarLab">Agendar Laboratorios al parque</option>
-              <option value="Queja">Queja</option>
-              <option value="Reclamo">Reclamo</option>
-              <option value="Solicitud">Solictud</option>
-              <option value="Felicitación">Felicitación</option>
-              <option value="Otra">Otra</option>
-            </select>
-          </p>
-          <!-- <p>
+            <p>
+              <label for="asunto" class="colocar_asunto"
+                >Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <select
+                class="select"
+                id="asunto"
+                name="asunto"
+                placeholder="asunto"
+                required="obligatorio"
+              >
+                <option value="">--Seleccione una opción--</option>
+                <option value="Pregunta">Pregunta</option>
+                <option value="Cotizacion">Cotización</option>
+                <option value="AgendarLab">
+                  Agendar Laboratorios al parque
+                </option>
+                <option value="Queja">Queja</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Solicitud">Solictud</option>
+                <option value="Felicitación">Felicitación</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </p>
+            <!-- <p>
                   <label for="caracterizacion" class="caracterizacion">Caracterización
                     <span class="obligatorio">*</span>
                   </label>
@@ -366,96 +403,145 @@
                         <option value="OtroExterno">Otro/Externo</option>
                     </select>
                 </p>  -->
-          <p>
-            <label for="mensaje" class="colocar_mensaje">Mensaje
-              <span class="obligatorio">*</span>
-            </label>
-            <textarea class="texto_mensaje" name="mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."
-              required="obligatorio"></textarea>
-          </p>
-
-          <!-- Extrae la fecha y hora actual para evitar que el ususario tenga que hacerlo -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-          <script>
-            $(document).ready(function () {
-
-              var now = new Date();
-              var today = now.toLocaleString();
-              $("#fecha").val(today);
-            });
-          </script>
-
-          <input type="hidden" name="fecha" id="fecha" value="<script>#fecha</script>">
-
-          <p>
-            <label for="politica">Política de tratamiento de datos personales
-              <span class="obligatorio">*</span>
-            </label>
-
-          <div class="politicaTramiento"><input class="check" type="checkbox" name="tratamiento" id="tratamiento"
-              placeholder="Acepta Tratamiento de datos" required="obligatorio"></input></p>
-
-
-            <p class="politica">DE ACUERDO CON LA <a href="http://www.legal.unal.edu.co/rlunal/home/doc.jsp?d_i=97992"
-                target="_blank"> LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES</a>, HE LEÍDO, ENTENDIDO Y ACEPTO,
-              LOS TÉRMINOS DESCRITOS EN LA POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES.</p>
+            <p>
+              <label for="mensaje" class="colocar_mensaje"
+                >Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea
+                class="texto_mensaje"
+                name="mensaje"
+                id="mensaje"
+                placeholder="Deja aquí tu comentario..."
+                required="obligatorio"
+              ></textarea>
             </p>
-          </div>
-          <!-- g-recaptcha div -->
-          <div class="reCaptcha">
-            <!-- Add the sitekey in data-sitekey attribute here -->
-            <div class="g-recaptcha" data-theme="light" data-size="normal" data-callback="captchaVerified"
-              data-expired-callback="captchaExpired" data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93">
+
+            <!-- Extrae la fecha y hora actual para evitar que el ususario tenga que hacerlo -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <script>
+              $(document).ready(function () {
+                var now = new Date();
+                var today = now.toLocaleString();
+                $('#fecha').val(today);
+              });
+            </script>
+
+            <input
+              type="hidden"
+              name="fecha"
+              id="fecha"
+              value="<script>#fecha</script>"
+            />
+
+            <label for="politica"
+              >Política de tratamiento de datos personales
+              <span class="obligatorio">*</span>
+            </label>
+
+            <div class="politicaTramiento">
+              <input
+                class="check"
+                type="checkbox"
+                name="tratamiento"
+                id="tratamiento"
+                placeholder="Acepta Tratamiento de datos"
+                required="obligatorio"
+              />
+
+              <p class="politica">
+                DE ACUERDO CON LA
+                <a
+                  href="http://www.legal.unal.edu.co/rlunal/home/doc.jsp?d_i=97992"
+                  target="_blank"
+                >
+                  LEY 1581 DE 2012 DE PROTECCIÓN DE DATOS PERSONALES</a
+                >, HE LEÍDO, ENTENDIDO Y ACEPTO, LOS TÉRMINOS DESCRITOS EN LA
+                POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES.
+              </p>
             </div>
-          </div>
 
-          <input class="button_disable" type="submit" id="button" disabled title="Debes validar que no eres un robot"
-            value="Envíe sus comentarios">
+            <!-- g-recaptcha div -->
+            <div class="reCaptcha">
+              <!-- Add the sitekey in data-sitekey attribute here -->
+              <div
+                class="g-recaptcha"
+                data-theme="light"
+                data-size="normal"
+                data-callback="captchaVerified"
+                data-expired-callback="captchaExpired"
+                data-sitekey="6LeYAtwkAAAAANwGnajMNDyifUiguMwiWjn1BD93"
+              ></div>
+            </div>
 
-          <p class="aviso">
-            <span class="obligatorio"> * </span>Campos obligatorios.
-          </p>
-        </form>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <input
+              class="button_disable"
+              type="submit"
+              id="button"
+              disabled
+              title="Debes validar que no eres un robot"
+              value="Envíe sus comentarios"
+            />
 
-        <script type="text/javascript">
-          emailjs.init('QA7ng39w-z3lITzit')
-        </script>
+            <p class="aviso">
+              <span class="obligatorio"> * </span>Campos obligatorios.
+            </p>
+          </form>
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          ></script>
 
-      </div>
-      <div class="header exito" id="exito">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle"
-          viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-          <path
-            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-        </svg>
-        <h1>¡Registro exitoso!</h1>
-        <p>Pronto nos comunicaremos con usted.<br><br><br><br></p>
-
-
-        <input class="button" onclick="history.go(0)" id="refresh" value="Volver">
+          <script type="text/javascript">
+            emailjs.init('QA7ng39w-z3lITzit');
+          </script>
+        </div>
+        <div class="header exito" id="exito">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-check-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            />
+            <path
+              d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+            />
+          </svg>
+          <h1>¡Registro exitoso!</h1>
+          <p>Pronto nos comunicaremos con usted.<br /><br /><br /><br /></p>
+          <input
+            class="button"
+            onclick="history.go(0)"
+            id="refresh"
+            value="Volver"
+          />
+        </div>
       </div>
     </div>
-
-
-
-
-
-    <aside>
-      <!-- Se coloca el enlace de la ubicación de la guía -->
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 bg-warning" align="center">
       <div class="fichaR">
         <p align="justify">Plataforma de laboratorios remotos</p>
         <a href="https://d1xb30i372mnxf.cloudfront.net/" target="_blank">
           <div id="contenedorQR" class="contenedorQR">
             <form id="formulario">
-              <input type="hidden" id="link" value="https://d1xb30i372mnxf.cloudfront.net">
+              <input
+                type="hidden"
+                id="link"
+                value="https://d1xb30i372mnxf.cloudfront.net"
+              />
             </form>
           </div>
         </a>
       </div>
-
+    </div>
+  </div>
+</div>
       <!-- Se coloca el enlace de la página de LAb Rem -->
       <!-- <div class="fichaB">
     <p align="justify">Plataforma de laboratorios remotos</p>
@@ -472,6 +558,11 @@
   </p>
   </div> -->
     </aside>
+
+
+
+
+
 
   </main>
 
