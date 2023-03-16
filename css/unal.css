@@ -456,6 +456,8 @@ main.detalle {
 }
 
 
+
+
 .fichaR{
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 	font-size: 18px;
@@ -467,15 +469,6 @@ main.detalle {
 	border-radius: 10px;
 	margin-top: 20px;
 	
-	
-	
-	
-	/*position: absolute;
-	margin-left: 50%;
-	margin-right: 10%;
-	margin-bottom: 0%;
-	top: 39.6%;
-	margin-top: 1%;*/
 		
 }
 
@@ -491,6 +484,9 @@ main.detalle {
 	margin-top: 25px;
 }
 
+
+
+
 .contenedorQR{
 	display: flex;
 	justify-content: center;
@@ -502,6 +498,9 @@ main.detalle {
 	margin-left:10%;
 	
 }
+
+
+
 .cuerpoFicha{
 	padding: 15px;
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
@@ -512,7 +511,8 @@ main.detalle {
 	text-align: justify;
 	margin-top: 20px;
 	margin-bottom: 5%;
-	/* margin-left: 10%; */
+	margin-left: 10%;
+	margin-right: 10%;
 	width: 70%;
 	border-radius: 10px;
 	min-height: 250px;
