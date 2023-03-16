@@ -550,10 +550,10 @@ font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 .contact_form{  
   font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
   font-size: 18px;
-  width: 50%; 
+  width: 70%; 
   height: auto;
-  margin-left: 10%;
-  margin-top: 5%;
+  margin-left: 0%;
+  margin-top: 0%;
   border-radius: 10px;
   border: solid 1px;  
   padding-top: 30px;
