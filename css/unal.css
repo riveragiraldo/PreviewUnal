@@ -694,7 +694,7 @@ transition: 0.5s;
 
 .reCaptcha{
   margin-left: 5%;
-  width: 90%;
+  width: auto;
   background-color: transparent; 
 
  }
