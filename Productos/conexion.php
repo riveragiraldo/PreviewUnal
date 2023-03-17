@@ -11,7 +11,7 @@
 <?php
 //Dirección a la BD
 
-$db_host = "DB";
+$db_host = "localhost";
 
 //Nombre de la BD
 
