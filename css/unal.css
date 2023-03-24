@@ -58,12 +58,11 @@ main {
 	-ms-flex: 1 0 auto; 
 	flex: 1 0 auto; 
 	min-height: 800px;
-	/* background-image: url("https://carontestudio.com/img/caronte-web-estudio-logo.png"); */
-	background-image: url("images/fondos/fondo.jpg");
+	
+	background-image: url("https://main.d1d9k4hnfcyk5y.amplifyapp.com/images/fondos/fondo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-x:center;
- 
+	background-position: center center;
 
 }
 
