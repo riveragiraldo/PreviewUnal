@@ -2,8 +2,8 @@
 var cuerpo = document.getElementById("cuerpo");
 
 var imagenes=new Array(
-    ['https://main.d1d9k4hnfcyk5y.amplifyapp.com/images/fondos/fondo.jpg'],
-    ['https://main.d1d9k4hnfcyk5y.amplifyapp.com/images/fondos/fondo1.jpg']
+    ['/images/fondos/fondo.jpg'],
+    ['/images/fondos/fondo1.jpg']
 
 );
 var uImage=imagenes[1];
@@ -38,7 +38,7 @@ onload=function()
     rotarImagenes();
 
     // Indicamos que cada 3 minutos cambie la imagen
-    setInterval(rotarImagenes,3000);
+    setInterval(rotarImagenes,5000);
 }
 
  
