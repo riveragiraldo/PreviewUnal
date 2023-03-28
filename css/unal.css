@@ -531,7 +531,23 @@ main.detalle {
 }
 	
 	
+.cuerpoFicha2{
+	padding: 15px;
+	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
 
+	font-size: 18px;
+	line-height:20px;
+	background-color: #FFF;
+	text-align: justify;
+	margin-top: 20px;
+	margin-bottom: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	width: 95%;
+	border-radius: 10px;
+	min-height: 250px;
+
+}	
 
 
 
