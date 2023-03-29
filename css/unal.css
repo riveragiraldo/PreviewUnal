@@ -770,7 +770,7 @@ transition: 0.5s;
 
 .articleTitle {
 		
-	position: absolute;
+	position: auto;
 	width: 25%;
 	height: 50px;
 	background-color: rgba(148, 180, 59, 1);
@@ -786,7 +786,7 @@ transition: 0.5s;
 
 .article{
 	border-bottom-left-radius: 13px;
-	position: absolute;
+	position: auto;
 	width: 25%;
 	height: auto;
 	background-color: rgba(213,213,214,0.9);
@@ -861,7 +861,7 @@ transition: 0.5s;
 	font-size:20px;	
 }
 .somos-unal {
-	position: absolute;
+	position: auto;
 	width: 235px;
 	height: auto;
 	background-color: transparent;
