@@ -783,7 +783,6 @@ transition: 0.5s;
 	padding: 5px;
 	border-top-right-radius: 15px;
 	margin-top: 50px;
-	min-width: 340px; 
 }
 
 .article{
@@ -801,7 +800,6 @@ transition: 0.5s;
 	font-size: 18px;
 	text-align: justify;
 	line-height:20px;
-	min-width: 340px; 
 	
 }
 .leftImage{

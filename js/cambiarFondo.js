@@ -12,18 +12,9 @@ var uImage=imagenes[1];
 
 
 var contador=0;
-/**
-     * Array con las ubicaciones de las imagenes
-     */
-
-
-
-/**
- * Funcion para cambiar la imagen
- */
 function rotarImagenes()
 {
-    // cambiamos la imagen
+    
     contador++
     uImage=imagenes[contador%imagenes.length][0];
     cuerpo.style.backgroundImage = 'url('+uImage+')';
@@ -31,18 +22,15 @@ function rotarImagenes()
 
 
 
-/**
- * Función que se ejecuta una vez cargada la página
- */
+
 onload=function()
 {
-    // Cargamos una imagen aleatoria
+   
     rotarImagenes();
 
-    // Indicamos que cada 3 minutos cambie la imagen
+   
     setInterval(rotarImagenes,5000);
 }
 
  
 
-// cuerpo.style.backgroundImage = 'url('+uImage+')';
