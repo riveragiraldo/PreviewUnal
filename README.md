@@ -1,2 +1,2 @@
 # Página de laboratorios remotos
-Laboratorios Interfacultades
+Gracias por visitarnos laboratorios remotos Universidad Nacional sede Manizales
