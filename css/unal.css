@@ -466,8 +466,17 @@ main.detalle {
 	
 }
 
+.vidContainer{
+	text-align: center;
+}
 
-
+.titleFicha{
+	text-align: center;
+}
+.cuerpoExperiencias{
+	margin-left: 30px;
+	margin-right: 30px;
+}
 
 .fichaR{
 	font-family: "Ancizar Sans", "Ancizar Sans Black", "Ancizar Sans Extrablack";
