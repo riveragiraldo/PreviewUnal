@@ -6,7 +6,7 @@ var imagenes=new Array(
     ['/images/fondos/fondo1.jpg'],
     ['/images/fondos/fondo2.jpg']
 );
-var uImage=imagenes[1];
+var uImage=imagenes[0];
 
 
 var contador=0;
@@ -27,7 +27,7 @@ onload=function()
     rotarImagenes();
 
    
-    setInterval(rotarImagenes,180000);
+    setInterval(rotarImagenes,5000);
 }
 
  
