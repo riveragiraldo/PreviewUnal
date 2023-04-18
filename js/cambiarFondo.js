@@ -27,7 +27,7 @@ onload=function()
     rotarImagenes();
 
    
-    setInterval(rotarImagenes,5000);
+    setInterval(rotarImagenes,180000);
 }
 
  
