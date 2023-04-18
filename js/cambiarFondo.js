@@ -4,9 +4,7 @@ var cuerpo = document.getElementById("cuerpo");
 var imagenes=new Array(
     ['/images/fondos/fondo.jpg'],
     ['/images/fondos/fondo1.jpg'],
-    ['/images/fondos/fondo2.jpg'],
-    ['/images/fondos/fondo3.jpg'],
-    ['/images/fondos/fondo4.jpg']
+    ['/images/fondos/fondo2.jpg']
 );
 var uImage=imagenes[1];
 
@@ -29,7 +27,7 @@ onload=function()
     rotarImagenes();
 
    
-    setInterval(rotarImagenes,5000);
+    setInterval(rotarImagenes,180000);
 }
 
  
